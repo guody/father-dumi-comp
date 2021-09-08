@@ -4,7 +4,7 @@
 // 默认 esm: 'rollup' 打包在一起，无法实现按需加载
 
 export default {
-  entry: 'src/index.js',
+  entry: 'src/index.ts',
   esm: {
     type: 'babel',
     minify: false,
@@ -12,13 +12,12 @@ export default {
   },
   cjs: 'babel',
   umd: {
-    name: 'myLib',
-    file: './dist/yxp-design.js',
+    name: 'yxpUI',
+    file: 'yxp-design',
+    minFile: true,
+    sourcemap: true
   },
   lessInBabelMode: true, // babel 模式下做 less 编译
   extractCSS: true,
-  runtimeHelpers: true,
-  autoprefixer: {
-    browsers: ['ie>9', 'Safari >= 6'],
-  }
+  runtimeHelpers: true
 };
