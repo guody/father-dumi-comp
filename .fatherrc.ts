@@ -11,6 +11,10 @@ export default {
     importLibToEs: true
   },
   cjs: 'babel',
+  umd: {
+    name: 'myLib',
+    file: './dist/yxp-design.js',
+  },
   lessInBabelMode: true, // babel 模式下做 less 编译
   extractCSS: true,
   runtimeHelpers: true,

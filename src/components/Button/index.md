@@ -1,7 +1,7 @@
 ---
 title: 按钮 Button
 group: 
-    title: 组件
+    title: 基础组件
     path: /comp
 ---
 

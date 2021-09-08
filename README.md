@@ -5,8 +5,14 @@
 Install dependencies,
 
 ```bash
-$ npm i
+$ npm i father-dumi-comp-demo
 ```
+or   
+
+```bash
+$ yarn add father-dumi-comp-demo
+```
+
 
 Start the dev server,
 
