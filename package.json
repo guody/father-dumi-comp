@@ -13,9 +13,13 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "typings": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "es/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guody/father-dumi-comp.git"
+  },
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
@@ -28,6 +32,7 @@
     ]
   },
   "dependencies": {
+    "@babel/runtime": "^7.15.4",
     "react": "^17.0.2"
   },
   "devDependencies": {

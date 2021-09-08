@@ -17,7 +17,7 @@ const Button: FC<ButtonProps> = ({
   return (
     <div>
         <button className="biz_dev_button" onClick={onClick} disabled={disabled}>
-        {children}xx
+        {children}-{type}
         </button>
     </div>
   );
